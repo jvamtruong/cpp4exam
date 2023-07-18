@@ -5,7 +5,7 @@ using namespace std;
 long long f[95];
 
 int main() {
-	ios_base::sync_with_stdio(0);
+    ios_base::sync_with_stdio(0);
     cin.tie(0);
     f[0] = 0; // :((
     f[1] = f[2] = 1;
@@ -13,9 +13,9 @@ int main() {
     int t;
     cin >> t;
     while (t--) {
-    	long long n;
-    	cin >> n;
-    	int idx = lower_bound(f, f + 93, n) - f;
-    	cout << (f[idx] == n ? "YES" : "NO") << endl;
-	}
+        long long n;
+        cin >> n;
+        int idx = lower_bound(f, f + 93, n) - f;
+        cout << (f[idx] == n ? "YES" : "NO") << endl;
+    }
 }
