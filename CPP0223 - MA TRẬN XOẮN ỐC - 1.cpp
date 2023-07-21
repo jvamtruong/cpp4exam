@@ -37,7 +37,7 @@ int main() {
             for (int i = d ; i >= u; i--) cout << a[i][l] << " ";
             cnt += d - u + 1;
             l++;
-            if (cnt == d - u + 1) break;
+            if (cnt == n * m) break;
         }
         cout << endl;
     }    
