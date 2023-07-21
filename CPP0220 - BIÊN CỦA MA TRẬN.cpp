@@ -20,8 +20,8 @@ int main() {
             for (int j = 0 ; j < n; j++) {
                 if (0 < i && i < n - 1 && 0 < j && j < n - 1) cout << " " << " ";
                 else cout << a[i][j] << " ";
-                if (j == n - 1) cout << endl;
             }
+            cout << endl;
         }
     }
 }
